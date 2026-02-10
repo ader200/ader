@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones | OpusBot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        body {
+            background-color: #050508;
+            color: white;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(6, 182, 212, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.03) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .cyber-border {
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            position: relative;
+        }
+        .cyber-border::before {
+            content: '';
+            position: absolute;
+            top: -1px; left: -1px;
+            width: 30px; height: 30px;
+            border-top: 2px solid #06b6d4;
+            border-left: 2px solid #06b6d4;
+        }
+        .cyber-border::after {
+            content: '';
+            position: absolute;
+            bottom: -1px; right: -1px;
+            width: 30px; height: 30px;
+            border-bottom: 2px solid #ec4899;
+            border-right: 2px solid #ec4899;
+        }
+        .scanline {
+            background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.3) 51%);
+            background-size: 100% 4px;
+        }
+        .glow-text { text-shadow: 0 0 20px rgba(6, 182, 212, 0.5); }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="min-h-screen scanline">
+    <header class="fixed w-full z-50 bg-[#050508]/90 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-cyan-500 to-pink-500 rounded-lg flex items-center justify-center">
+                    <span class="font-black italic text-white">O</span>
+                </div>
+                <span class="text-xl font-black italic uppercase tracking-tighter">OPUS<span class="text-cyan-400">BOT</span></span>
+            </div>
+            <a href="https://opusbot.app" class="text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-white transition-colors">
+                ← Volver al Sistema
+            </a>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-16 px-6">
+        <div class="max-w-4xl mx-auto text-center reveal active">
+            <div class="inline-block px-4 py-2 mb-6 rounded-full border border-cyan-500/30 bg-cyan-500/5 text-cyan-400 text-[10px] font-bold uppercase tracking-[0.3em]">
+                Documento Legal v2.5
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black italic uppercase tracking-tighter mb-4">
+                Términos y <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500 glow-text">Condiciones</span>
+            </h1>
+            <p class="text-gray-400 text-sm md:text-base uppercase tracking-widest max-w-2xl mx-auto">
+                Reglas de uso para la plataforma de orquestación y automatización de contenido multimedia
+            </p>
+        </div>
+    </section>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+        <div class="glass-panel cyber-border rounded-2xl p-6 mb-8 reveal">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <p class="text-[10px] font-black uppercase text-gray-500 tracking-widest mb-1">Última Actualización</p>
+                    <p class="font-mono text-cyan-400">2026-02-10 00:00:00 UTC</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <input type="checkbox" id="accept-terms" class="w-5 h-5 accent-cyan-500 cursor-pointer">
+                    <label for="accept-terms" class="text-sm text-gray-300 cursor-pointer">
+                        He leído y acepto estos términos
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <section class="mb-12 reveal">
+            <h2 class="text-2xl font-black italic uppercase tracking-tighter mb-6 text-white">
+                <span class="text-cyan-400">01.</span> Redes Sociales Integradas
+            </h2>
+            <div class="glass-panel rounded-2xl p-8 border border-white/5">
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    OpusBot facilita la gestión simultánea de contenido en las siguientes plataformas mediante APIs oficiales:
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-[#111] rounded-xl p-4 border border-gray-800 text-center hover:border-pink-500/50 transition-all">
+                        <div class="w-12 h-12 mx-auto bg-[#000] rounded-lg flex items-center justify-center mb-3">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-500">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-black uppercase text-gray-400">Instagram</p>
+                        <p class="text-[10px] text-gray-600 mt-1">Graph API</p>
+                    </div>
+                    <div class="bg-[#111] rounded-xl p-4 border border-gray-800 text-center hover:border-cyan-500/50 transition-all">
+                        <div class="w-12 h-12 mx-auto bg-[#000] rounded-lg flex items-center justify-center mb-3">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-cyan-400">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-black uppercase text-gray-400">TikTok</p>
+                        <p class="text-[10px] text-gray-600 mt-1">Upload API</p>
+                    </div>
+                    <div class="bg-[#111] rounded-xl p-4 border border-gray-800 text-center hover:border-red-500/50 transition-all">
+                        <div class="w-12 h-12 mx-auto bg-[#000] rounded-lg flex items-center justify-center mb-3">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-red-500">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-black uppercase text-gray-400">YouTube</p>
+                        <p class="text-[10px] text-gray-600 mt-1">Data API v3</p>
+                    </div>
+                    <div class="bg-[#111] rounded-xl p-4 border border-gray-800 text-center hover:border-blue-500/50 transition-all">
+                        <div class="w-12 h-12 mx-auto bg-[#000] rounded-lg flex items-center justify-center mb-3">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-blue-500">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-black uppercase text-gray-400">Facebook</p>
+                        <p class="text-[10px] text-gray-600 mt-1">Video API</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-8">
+            <article class="reveal">
+                <h3 class="text-xl font-black italic uppercase tracking-tight mb-4 text-white flex items-center gap-3">
+                    <span class="text-cyan-400">§1</span> Aceptación de Términos
+                </h3>
+                <div class="glass-panel rounded-xl p-6 border-l-2 border-cyan-500">
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Al acceder y utilizar OpusBot, el usuario reconoce haber leído, comprendido y aceptado vincularse por estos Términos y Condiciones, así como por las políticas de privacidad de cada plataforma de red social integrada. El uso del servicio constituye aceptación plena e incondicional de todas las disposiciones aquí contenidas.
+                    </p>
+                </div>
+            </article>
+
+            <article class="reveal">
+                <h3 class="text-xl font-black italic uppercase tracking-tight mb-4 text-white flex items-center gap-3">
+                    <span class="text-pink-500">§2</span> Descripción del Servicio
+                </h3>
+                <div class="glass-panel rounded-xl p-6 border-l-2 border-pink-500">
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        OpusBot es una plataforma de gestión y automatización que permite a los usuarios:
+                    </p>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-1">→</span>
+                            Programar y planificar contenido multimedia para múltiples plataformas
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-1">→</span>
+                            Centralizar la publicación de videos en TikTok, Instagram, YouTube y Facebook
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-1">→</span>
+                            Gestionar conexiones API de manera unificada
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-1">→</span>
+                            Almacenar y organizar contenido en la nube (Neural Bank)
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="reveal">
+                <h3 class="text-xl font-black italic uppercase tracking-tight mb-4 text-white flex items-center gap-3">
+                    <span class="text-cyan-400">§3</span> Cuenta de Usuario y Conexiones
+                </h3>
+                <div class="glass-panel rounded-xl p-6 border-l-2 border-cyan-500">
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        El usuario mantiene control total sobre sus conexiones con redes sociales. Tiene derecho a:
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-[#111] rounded-lg p-4 border border-gray-800">
+                            <h4 class="text-cyan-400 text-xs font-black uppercase mb-2">Bloqueo de Conexiones</h4>
+                            <p class="text-gray-400 text-xs">El usuario puede bloquear o desconectar cualquiera de sus cuentas de redes sociales en cualquier momento desde la configuración de la plataforma.</p>
+                        </div>
+                        <div class="bg-[#111] rounded-lg p-4 border border-gray-800">
+                            <h4 class="text-pink-400 text-xs font-black uppercase mb-2">Anclar Cuentas</h4>
+                            <p class="text-gray-400 text-xs">Función de anclado disponible para priorizar la publicación en plataformas específicas según estrategia del usuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="reveal">
+                <h3 class="text-xl font-black italic uppercase tracking-tight mb-4 text-white flex items-center gap-3">
+                    <span class="text-pink-500">§4</span> Programación y Planificación de Contenido
+                </h3>
+                <div class="glass-panel rounded-xl p-6 border-l-2 border-pink-500">
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        OpusBot permite la planificación anticipada de publicaciones. El usuario comprende y acepta que:
+                    </p>
+                    <ul class="space-y-3 text-gray-300 text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 font-mono text-xs">04.1</span>
+                            Las publicaciones programadas se ejecutarán automáticamente según la fecha y hora especificadas
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 font-mono text-xs">04.2</span>
+                            El usuario es responsable del contenido programado y sus implicaciones legales
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 font-mono text-xs">04.3</span>
+                            OpusBot no modifica ni edita contenido automáticamente sin autorización del usuario
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 font-mono text-xs">04.4</span>
+                            Los fallos en la publicación por causas técnicas de las APIs externas no son responsabilidad de OpusBot
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="reveal">
+                <h3 class="text-xl font-black italic uppercase tracking-tight mb-4 text-white flex items-center gap-3">
+                    <span class="text-cyan-400">§5</span> Propiedad Intelectual y Contenido
+                </h3>
+                <div class="glass-panel rounded-xl p-6 border-l-2 border-cyan-500">
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        El usuario conserva todos los derechos sobre el contenido cargado en OpusBot. Al utilizar el servicio:
+                    </p>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-1">→</span>
+                            El usuario garantiza que posee todos los derechos necesarios sobre el contenido
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-1">→</span>
+                            OpusBot actúa únicamente como intermediario técnico para la publicación
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-1">→</span>
+                            El contenido almacenado en Neural Bank permanece bajo propiedad exclusiva del usuario
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="reveal">
+                <h3 class="text-xl font-black italic uppercase tracking-tight mb-4 text-white flex items-center gap-3">
+                    <span class="text-pink-500">§6</span> Limitación de Responsabilidad
+                </h3>
+                <div class="glass-panel rounded-xl p-6 border-l-2 border-pink-500">
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        OpusBot se proporciona "tal cual" sin garantías expresas o implícitas. No nos hacemos responsables por pérdidas de datos, interrupciones del servicio, o cualquier daño directo, indirecto, incidental o consecuente derivado del uso de la plataforma, incluyendo pero no limitándose a acciones tomadas por las plataformas de redes sociales sobre el contenido publicado.
+                    </p>
+                </div>
+            </article>
+
+            <article class="reveal">
+                <h3 class="text-xl font-black italic uppercase tracking-tight mb-4 text-white flex items-center gap-3">
+                    <span class="text-cyan-400">§7</span> Modificaciones del Servicio
+                </h3>
+                <div class="glass-panel rounded-xl p-6 border-l-2 border-cyan-500">
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        OpusBot se reserva el derecho de modificar, suspender o discontinuar cualquier aspecto del servicio en cualquier momento. Los cambios serán comunicados a través de la plataforma. El uso continuado del servicio después de cualquier modificación constituye aceptación de los nuevos términos.
+                    </p>
+                </div>
+            </article>
+
+            <article class="reveal">
+                <h3 class="text-xl font-black italic uppercase tracking-tight mb-4 text-white flex items-center gap-3">
+                    <span class="text-pink-500">§8</span> Políticas de Plataformas de Terceros
+                </h3>
+                <div class="glass-panel rounded-xl p-6 border-l-2 border-pink-500">
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        El uso de OpusBot está sujeto a las políticas y términos de servicio de las plataformas de redes sociales conectadas:
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-3 text-xs">
+                        <a href="https://www.tiktok.com/legal/page/row/terms-of-service/en" target="_blank" class="flex items-center gap-2 bg-[#111] p-3 rounded-lg border border-gray-800 hover:border-cyan-500/50 transition-all">
+                            <span class="text-cyan-400 font-mono">TOS-01</span>
+                            <span class="text-gray-300">Términos de TikTok</span>
+                        </a>
+                        <a href="https://help.instagram.com/581066165581870" target="_blank" class="flex items-center gap-2 bg-[#111] p-3 rounded-lg border border-gray-800 hover:border-pink-500/50 transition-all">
+                            <span class="text-cyan-400 font-mono">TOS-02</span>
+                            <span class="text-gray-300">Términos de Instagram</span>
+                        </a>
+                        <a href="https://www.youtube.com/t/terms" target="_blank" class="flex items-center gap-2 bg-[#111] p-3 rounded-lg border border-gray-800 hover:border-red-500/50 transition-all">
+                            <span class="text-cyan-400 font-mono">TOS-03</span>
+                            <span class="text-gray-300">Términos de YouTube</span>
+                        </a>
+                        <a href="https://www.facebook.com/terms" target="_blank" class="flex items-center gap-2 bg-[#111] p-3 rounded-lg border border-gray-800 hover:border-blue-500/50 transition-all">
+                            <span class="text-cyan-400 font-mono">TOS-04</span>
+                            <span class="text-gray-300">Términos de Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="reveal">
+                <h3 class="text-xl font-black italic uppercase tracking-tight mb-4 text-white flex items-center gap-3">
+                    <span class="text-cyan-400">§9</span> Privacidad y Protección de Datos
+                </h3>
+                <div class="glass-panel rounded-xl p-6 border-l-2 border-cyan-500">
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        OpusBot recopila información mínima necesaria para el funcionamiento del servicio. Los tokens de acceso a redes sociales se almacenan de forma encriptada y nunca se comparten con terceros.
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        <strong class="text-cyan-400">Datos recolhits:</strong> Correo electrónico de Google OAuth, tokens de API encriptados, metadatos de publicaciones.
+                    </p>
+                </div>
+            </article>
+
+            <article class="reveal">
+                <h3 class="text-xl font-black italic uppercase tracking-tight mb-4 text-white flex items-center gap-3">
+                    <span class="text-pink-500">§10</span> Jurisdicción y Ley Aplicable
+                </h3>
+                <div class="glass-panel rounded-xl p-6 border-l-2 border-pink-500">
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Estos términos se rigen por las leyes internacionales aplicables a servicios digitales. Cualquier disputa será resuelta mediante arbitraje o en tribunales competentes según jurisdicción aplicable.
+                    </p>
+                </div>
+            </article>
+
+            <article class="reveal">
+                <h3 class="text-xl font-black italic uppercase tracking-tight mb-4 text-white flex items-center gap-3">
+                    <span class="text-cyan-400">§11</span> Información de Contacto
+                </h3>
+                <div class="glass-panel rounded-xl p-6 border-l-2 border-cyan-500">
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Para preguntas sobre estos términos o el servicio:
+                    </p>
+                    <div class="bg-[#111] rounded-lg p-4 border border-gray-800">
+                        <p class="font-mono text-cyan-400 text-sm">support@opusbot.app</p>
+                        <p class="text-gray-500 text-xs mt-1">Tiempo de respuesta: 24-48 horas laborables</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <div class="mt-12 reveal">
+            <button id="accept-btn" disabled class="w-full py-4 bg-cyan-500/20 border border-cyan-500/50 text-cyan-400 font-black uppercase tracking-[0.2em] rounded-xl hover:bg-cyan-500 hover:text-black transition-all disabled:opacity-50 disabled:cursor-not-allowed">
+                Aceptar Términos y Continuar
+            </button>
+        </div>
+    </main>
+
+    <footer class="border-t border-white/5 py-12 text-center">
+        <div class="flex flex-col items-center gap-4">
+            <div class="flex items-center gap-2">
+                <div class="w-5 h-5 bg-gradient-to-br from-cyan-500 to-pink-500 rounded flex items-center justify-center">
+                    <span class="font-black italic text-[10px] text-white">O</span>
+                </div>
+                <span class="text-lg font-black italic uppercase tracking-tighter text-gray-700">OPUS<span class="text-gray-800">BOT</span></span>
+            </div>
+            <p class="text-[9px] text-gray-600 font-bold uppercase tracking-[0.4em]">Automation Engine v2.5</p>
+            <p class="text-[8px] text-gray-600 font-mono">© 2026 OpusBot. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const checkbox = document.getElementById('accept-terms');
+        const btn = document.getElementById('accept-btn');
+
+        checkbox.addEventListener('change', () => {
+            btn.disabled = !checkbox.checked;
+            if (checkbox.checked) {
+                btn.classList.remove('bg-cyan-500/20', 'border-cyan-500/50', 'text-cyan-400');
+                btn.classList.add('bg-cyan-500', 'text-black', 'shadow-[0_0_30px_rgba(6,182,212,0.4)]');
+            } else {
+                btn.classList.add('bg-cyan-500/20', 'border-cyan-500/50', 'text-cyan-400');
+                btn.classList.remove('bg-cyan-500', 'text-black', 'shadow-[0_0_30px_rgba(6,182,212,0.4)]');
+            }
+        });
+
+        btn.addEventListener('click', () => {
+            localStorage.setItem('opus_terms_accepted', 'true');
+            localStorage.setItem('opus_terms_date', new Date().toISOString());
+            window.close();
+        });
+
+        if (localStorage.getItem('opus_terms_accepted') === 'true') {
+            checkbox.checked = true;
+            btn.disabled = false;
+            btn.classList.remove('bg-cyan-500/20', 'border-cyan-500/50', 'text-cyan-400');
+            btn.classList.add('bg-cyan-500', 'text-black', 'shadow-[0_0_30px_rgba(6,182,212,0.4)]');
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
