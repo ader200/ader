@@ -21,29 +21,13 @@ Página de términos y condiciones para la plataforma OpusBot con estilo cyberpu
 - §10: Jurisdicción
 - §11: Información de Contacto
 
-## Despliegue en GitHub Pages
+## GitHub Pages
+URL: **https://ader200.github.io/ader/**
 
-1. Crea un nuevo repositorio en GitHub llamado `terminos-conditions`
-2. Sube estos archivos:
-   ```bash
-   cd terminos-conditions
-   git init
-   git add .
-   git commit -m "Initial commit: Términos y Condiciones"
-   git branch -M main
-   git remote add origin https://github.com/TU_USUARIO/terminos-conditions.git
-   git push -u origin main
-   ```
-
-3. En GitHub: Settings → Pages → Source: "main" → Save
-
-4. La URL será: `https://TU_USUARIO.github.io/terminos-conditions/`
-
-## URL para OpusBot
-Una vez desplegado, actualiza el enlace en `LoginScreen.tsx` línea 131:
-```jsx
-<a href="https://TU_USUARIO.github.io/terminos-conditions/" target="_blank" className="hover:text-gray-400 transition-colors">Términos</a>
-```
+## Archivos
+- index.html - Página principal
+- imagen_1024x1024.png - Logo de OpusBot
+- README.md - Este archivo
 
 ## Versión
 - v2.5 - 2026-02-10
